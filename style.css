@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "FuturaMedium";
+  src: url("./assets/fonts/FuturaPTMedium.otf");
+}
+@font-face {
+  font-family: "FuturaBook";
+  src: url("./assets/fonts/FuturaPTBook.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #e0e2db;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  text-align: center;
+}
+
+#global-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+header {
+  background-color: #335c88;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+  font-family: "FuturaMedium";
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+h2 {
+  margin-top: 0;
+}
+
+header,
+p {
+  color: white;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+}
+
+h3 {
+  color: #ccc1ff;
+  font-weight: bold;
+}
+
+#input-el {
+  text-align: center;
+  width: 10rem;
+  height: 8rem;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: #335c88;
+  color: white;
+  margin-top: 2rem;
+  font-weight: 900;
+}
+
+#convert-btn {
+  text-align: center;
+  width: 10rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+#convert-btn:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+#convert-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#convert-btn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#enter-el {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f43f5e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px 2px #1f2937;
+  letter-spacing: 0.2rem;
+}
+
+main {
+  font-family: "FuturaBook";
+  font-size: 1.3rem;
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.conversion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #273549;
+  width: 80%;
+  border-radius: 0.5rem;
+  margin: 1.2rem;
+}
